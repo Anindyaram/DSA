@@ -10,7 +10,14 @@ return true since 10 + 7 is 17.
 using namespace std;
 
 int check(int arr[] , int k , int n){
-    
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i] + arr[j] == k){
+                return true;
+            }
+        }
+    }
+    return false;
 }
 
 int main(){
@@ -22,8 +29,10 @@ int main(){
     }
     cout<<"Enter k "<<endl;
     cin>>k;
-
-
-
+    if(check(arr,k,n)){
+        cout<<"true";
+    }else{
+        cout<<"false";
+    };
     return 0;
 }
