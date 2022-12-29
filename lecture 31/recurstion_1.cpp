@@ -1,6 +1,10 @@
 /*When a function call itself it's known as Recursion
     When a problem can be divided into smaller sub problem then we can use Recursion to solve it.
-    Two Things are mandatory to solve a problem by recursion i.e Base Case and Recursive Relation
+    Two Things are mandatory to solve a problem by recursion i.e Base Case and Recursive Relation and we can add one more thing i.e Processing(cout ,cin ,update)
+
+    Types of Recursion - 
+    Tail Recursion - When recursive relation comes after processing.
+    Head Recursion - When recursive relation comes before processing
 */
 
 #include<iostream>
