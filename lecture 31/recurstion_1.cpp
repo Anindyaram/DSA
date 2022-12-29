@@ -4,7 +4,7 @@
 
     Types of Recursion - 
     Tail Recursion - When recursive relation comes after processing.
-    Head Recursion - When recursive relation comes before processing
+    Head Recursion - When recursive relation comes before processing.
 */
 
 #include<iostream>
@@ -22,9 +22,7 @@ int main(){
 
     int n;
     cin>>n;
-
     int ans = factorial(n);
-
     cout<<ans<<endl;
 
 }
