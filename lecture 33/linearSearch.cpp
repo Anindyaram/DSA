@@ -1,7 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void Print(int *arr, int size){
+    cout<<"Size of Array : "<<size<<endl;
+    for(int i=0;i<size;i++){
+        cout<<arr[i]<<" ";
+    }cout<<endl;
+}
+
 bool LinearSearch(int *arr , int size ,int key ){
+
+    Print(arr,size);
     //base case
     if(size == 0) 
         return false;
@@ -15,7 +24,7 @@ bool LinearSearch(int *arr , int size ,int key ){
 int main(){
     int arr[] = {2,4,5,6,7,9};
     int size = 6;
-    int key = 1;
+    int key = 5;
     if(LinearSearch(arr,size,key)==true){
         cout<<"Key Present!!";
     }else{
