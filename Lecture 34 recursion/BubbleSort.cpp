@@ -13,7 +13,7 @@ void bubbleSort(int *arr , int size){
     }
     //Processing
     for(int i=0;i<size-1;i++){
-        Print(arr,size);
+        // Print(arr,size);
         if(arr[i] > arr[i+1]){
             swap(arr[i] , arr[i+1]);
         }
