@@ -19,11 +19,10 @@ void merge(int *arr, int s, int e){
         second[i] = arr[mainArrayIndex++];
     }
 
-    //merge 2 sorted arrays
+    //merge 2 sorted arrays question 
     int index1 = 0;
     int index2 = 0;
     mainArrayIndex = s;
-
     while(index1 < len1 && index2 < len2){  //during tranversing indexes should not go out of range
         if(first[index1] < second[index2]){
             arr[mainArrayIndex++] = first[index1++];
@@ -37,8 +36,7 @@ void merge(int *arr, int s, int e){
     while(index2 < len2){
         arr[mainArrayIndex] = second[index2++];
     }
-
-    //Array has been used so deleting copied array
+    //Array has been used so, deleting the copied array
     delete []first;
     delete []second;
 }
@@ -47,16 +45,14 @@ void mergeSort(int *arr, int s, int e){
     //base case
     if(s>=e)
         return;
-    
+    //Finding middle of array
     int mid = s+ (e-s)/2;
-
     //Before middle of array
     mergeSort(arr , s, mid);
     //After middle of array
     mergeSort(arr, mid+1, e);
-
+    //merging the array after division in single element
     merge(arr ,s ,e);
-
 }
 
 int main(){
