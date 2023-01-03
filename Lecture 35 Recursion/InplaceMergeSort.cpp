@@ -2,6 +2,12 @@
 #include <iostream>
 using namespace std;
 
+void Print(int *arr,int  size){
+    for(int i=0 ; i<size; i++){
+        cout<< arr[i] << " ";
+    }cout<<endl;
+}
+
 void merge(int *arr, int s, int mid, int e)
 {
     int s2 = mid + 1;
