@@ -1,11 +1,16 @@
 /*
 Polymorphism - single thing with mutiple forms;
 Types of Polymorphism - 
-    1> Compile Time Polymorphism
+    1> Compile Time Polymorphism (Static polymorphism)
         Types of CTP-
             1> Funtion Overloading
             2> Operator Overloading
-    2> Run Time Polymorphism;
+    2> Run Time Polymorphism - depends on inheritence;
+        Types of RTP-
+            1> Method Overriding - 
+                Rules - Same name
+                        Same parameter
+                        Can be achieve only by Inheritence
 */
 #include<iostream>
 using namespace std;
