@@ -5,6 +5,12 @@ Types Of Inheritence:
     3> Multiple Ineheritence     - Many parent of single child class
     4> Hierarchical Inheritence  - Single parent has multiple child
     5> Hybrid Inheritence        - Combination of more then one type of inheritence ,Eg- combination of Hierarchical and multilevel
+
+Ambiguity in Inheritence - Function's with same name in different class cause this
+    Solution - use scope resolution operator (::)
+    Eg - c obj
+        obj.A::function() - for Using function in class A;
+        obj.B::function() - for Using function in class B;
 */
 #include<iostream>
 using namespace std;
