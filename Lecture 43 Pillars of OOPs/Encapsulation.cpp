@@ -1,3 +1,6 @@
+/*
+Encapsulation - Wraping data member and function in same class
+*/
 #include <iostream>
 using namespace std;
 
