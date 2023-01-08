@@ -27,6 +27,15 @@ public:
         cout<<a<<" HAHAHAHAHAHHAHAHA!!";
     }
 };
+
+int main(){
+
+    poly be;
+    be.he();
+    be.he("Person");
+
+    return 0;
+}
 */
 
 //Operator Overloading eg-
@@ -57,11 +66,6 @@ int main(){
     obj2.a = 15;
 
     obj1 + obj2;
-
-
-    // poly be;
-    // be.he();
-    // be.he("Person");
 
     return 0;
 }

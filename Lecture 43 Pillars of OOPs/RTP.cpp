@@ -1,3 +1,9 @@
+/*
+Method / Function Overriding - 
+    Rules - Same name
+            Same parameter
+            Can be achieve only by Inheritence
+*/
 #include<iostream>
 using namespace std;
 
