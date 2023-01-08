@@ -24,7 +24,7 @@ public:
 int main(){
     poly be;
     be.he();
-    be.he("Women");
+    be.he("Person");
 
     return 0;
 }
