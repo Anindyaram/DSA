@@ -12,6 +12,16 @@ public:
         this->data = n;
         this->next = NULL; 
     }
+    //destructor
+    ~node(){
+        int value = this->data;
+        //memory free
+        if(this->next != NULL){
+            delete next;
+            this -> next = NULL;
+        }
+        cout<<"Memory free for node with data : "<<value<<endl;
+    }
 };
 
 //Insertion in linked list
@@ -62,6 +72,33 @@ void printLinkedList(node* &head){
     }cout<<endl;
 }
 
+//Deleting node in linked list
+void deleteNode(node* &head , int position){
+    //Deleting starting node
+    if(position == 1){
+        node* temp = head;
+        head = head->next;
+        //memory freeing
+        temp->next = NULL;
+        delete temp;
+    }
+    else{
+        //deleting any node or last node
+        node* curr = head;
+        node* pre = NULL;
+        int counter = 1;
+        while(counter < position){
+            pre = curr;
+            curr = curr->next;
+            counter++;
+        }
+        pre->next = curr->next;
+        //Freeing memory
+        curr->next = NULL;
+        delete curr;
+    }
+}
+
 int main(){
     //Created new node
     node* node1 = new node(23);
@@ -86,8 +123,22 @@ int main(){
     //Inserting at a particular position
     insertPosition(tail , head , 3 , 100);
     printLinkedList(head);
+
     cout << "Head : "<<head->data<<endl;
     cout << "Tail : "<<tail->data<<endl;
+
+    deleteNode(head , 3);
+    printLinkedList(head);
+
+    deleteNode(head , 1);
+    printLinkedList(head);
+
+    deleteNode(head , 4);
+    printLinkedList(head);
+    cout << "Head : "<<head->data<<endl;
+    cout << "Tail : "<<tail->data<<endl;
+
+    return 0;
 
 }
 
