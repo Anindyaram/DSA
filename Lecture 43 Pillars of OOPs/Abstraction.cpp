@@ -1,6 +1,6 @@
 /*
-Abstraction - Implementation Hiding 
-    Can be achieved by using access modifiers;
+Abstraction --> Implementation Hiding 
+                Can be achieved by using access modifiers;
 */
 #include<iostream>
 using namespace std;
